@@ -1,16 +1,17 @@
 ﻿string? numInputs = "";
 int convertedInputs = 0;
 bool validInput = false;
+string averageCategory = "";
 
 Console.Write("How many numbers would you like to analyze today?\n> ");
 
 //Makes sure the input is numerical
-while (validInput == false)
+while (!validInput)
 {
     numInputs = Console.ReadLine();
     validInput = int.TryParse(numInputs, out convertedInputs);
 
-    if (validInput == false)
+    if (!validInput)
     {
         Console.Write($"You entered {numInputs}, This is invalid.\n\nPlease enter how many numbers you would like to analyze.\n> ");
     }
@@ -25,45 +26,106 @@ for (int i = 0; i < convertedInputs; i++)
     validInput = false;
 
     //Makes sure the input is numerical
-    while (validInput == false)
+    while (!validInput)
     {
         userNumber = Console.ReadLine();
         validInput = int.TryParse(userNumber, out convertedNumbers[i]);
 
-        if (validInput == false)
+        if (!validInput)
         {
             Console.Write($"You entered {userNumber}, This is invalid.\nPlease enter number {i + 1}\n> ");
         }
     }
 }
 
-/*
-Console.Write($"The entered numbers are: ");
+
+Console.Write("\nYou entered: ");
 
 for (int i = 0; i < convertedNumbers.Length;i++)
 {
-    Console.Write($"{convertedNumbers[i]}, ");
+    Console.Write($"{convertedNumbers[i]}");
+    if (i != convertedNumbers.Length - 1)
+    {
+        Console.Write(", ");
+    }
+    else
+    {
+        Console.WriteLine();
+    }
 
 }
-*/
 
-void CalculateAverage(int[] userInput)
+averageCategory = CalculateAverage(convertedNumbers);
+FindMax(convertedNumbers);
+FindMin(convertedNumbers);
+Sum(convertedNumbers);
+Console.WriteLine($"Category:\t{averageCategory}");
+
+string CalculateAverage(int[] numbers)
 {
+    decimal average = 0;
+    string averageRating = "";
 
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        average += numbers[i];
+    }
+
+    average /= numbers.Length;
+
+    if (average > 50)
+    {
+        averageRating = "High average";
+    }
+    else if (20 <= average && average <= 50)
+    {
+        averageRating = "Medium average";
+    }
+    else
+    {
+        averageRating = "Low average";
+    }
+
+    Console.WriteLine($"Average:\t{average:F2}");
+    return averageRating;
 }
-void FindMax(int[] userInput)
+        
+void FindMax(int[] numbers)
 {
+    int max = numbers[0];
 
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (numbers[i] > max)
+        {
+            max = numbers[i];
+        }
+    }
+    Console.WriteLine($"Maximum:\t{max}");
 }
 
-void FindMin(int[] userInput)
+void FindMin(int[] numbers)
 {
+    int min = numbers[0];
 
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (numbers[i] < min)
+        {
+            min = numbers[i];
+        }
+    }
+    Console.WriteLine($"Minimum:\t{min}");
 }
 
-void SumAll(int[] userInput)
+void Sum(int[] numbers)
 {
+    int totalSum = 0;
 
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        totalSum += numbers[i];
+    }
+    Console.WriteLine($"Total Sum:\t{totalSum}");
 }
 
-//I'm pretty sure the input validation can be a method, maybe add that later.
