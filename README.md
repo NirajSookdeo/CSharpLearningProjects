@@ -12,7 +12,7 @@ Each project focuses on specific things learned while progressing. Attempting to
 
 ## Projects
 
-### [1. Number Analyzer](/NumberAnalyzer/)
+### [1. Number Analyzer]
 - Collects and validates numerical input from users
 - Performs statistical analysis (average, min, max, sum)
 - Categorizes results with clear output formatting
