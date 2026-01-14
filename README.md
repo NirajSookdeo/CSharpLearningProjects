@@ -19,12 +19,12 @@ Each project focuses on specific things learned while progressing. Attempting to
 - Implements professional error handling and user feedback
 
 ## Progress Timeline
-Month 1 : C# Fundamentals & Console Applications 
-<✅ In Progress>
-Month 2 : ASP.NET Core Web APIs & Databases 
-<🔜 Next>
-Month 3 : Full-Stack Application Development 
-<🔜 Future>
+- Month 1 : C# Fundamentals & Console Applications
+  <✅ In Progress>
+- Month 2 : ASP.NET Core Web APIs & Databases
+  <🔜 Next>
+- Month 3 : Full-Stack Application Development
+  <🔜 Future>
 
 ## Goals
 - Transition to working as a junior .NET developer
