@@ -18,6 +18,14 @@ Each project focuses on specific things learned while progressing. Attempting to
 - Categorizes results with clear output formatting
 - Implements professional error handling and user feedback
 
+### [2. Role Management System]
+- Manages employee roles with three-tier hierarchy (Admin, User, Guest)
+- Displays sorted roster with said hierarchical ordering
+- Uses a state machine with boolean state control
+- Enforces business rules including guest limits (max 3) and input validation
+- Utilizes parallel collections (List<string>) for data management
+- Features professional error handling and cleans user input
+
 ## Progress Timeline
 - Month 1 : C# Fundamentals & Console Applications
   <✅ In Progress>
