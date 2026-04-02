@@ -4,6 +4,11 @@
 Practical projects building C# skills en route to ASP.NET Core Web API development. 
 Each project focuses on specific things learned while progressing. Attempting to keep code looking professional.
 
+## Where I'm At
+I just finished one of my most recent projects, a very simple Tamagotchi-like that I decided to call MyPetDaycare.
+It is also a console program, so I'm looking to try creating something with more visual elements for the next project.
+The details for it will be below, feel free to mess around with it, find bugs, and give me some suggestions!
+
 ## Learning Path
 1. **C# Fundamentals** → Console applications mastering syntax and logic
 2. **.NET Ecosystem** → Understanding frameworks and best practices  
@@ -18,13 +23,16 @@ Each project focuses on specific things learned while progressing. Attempting to
 - Categorizes results with clear output formatting
 - Implements professional error handling and user feedback
 
-## Progress Timeline
-- Month 1 : C# Fundamentals & Console Applications
-  <✅ In Progress>
-- Month 2 : ASP.NET Core Web APIs & Databases
-  <🔜 Next>
-- Month 3 : Full-Stack Application Development
-  <🔜 Future>
+### [2. Role Management System]
+- Manages employee roles with three-tier hierarchy (Admin, User, Guest)
+- Displays sorted roster with said hierarchical ordering
+- Uses a state machine with boolean state control
+- Enforces business rules including guest limits (max 3) and input validation
+- Utilizes parallel collections (List<string>) for data management
+- Features professional error handling and cleans user input
+
+### [3. MyPetDaycare]
+- 
 
 ## Goals
 - Transition to working as a junior .NET developer
