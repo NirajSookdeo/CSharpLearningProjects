@@ -1,0 +1,6 @@
+@PetDaycareAPI_HostAddress = http://localhost:5135
+
+GET {{PetDaycareAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
