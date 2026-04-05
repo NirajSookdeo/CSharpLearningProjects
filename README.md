@@ -6,14 +6,8 @@ Each project focuses on specific things learned while progressing. Attempting to
 
 ## Where I'm At
 I just finished one of my most recent projects, a simple Tamagotchi-like I called MyPetDaycare.
-It is also a console program, so I'm looking to try creating something with more visual elements for the next project.
+Next I will take the plunge into learning ASP.NET Core. I will likely add features and polish for the web app version of this project.
 The details for it will be below, feel free to mess around with it, find bugs, and give me some suggestions!
-
-## Learning Path
-1. **C# Fundamentals** → Console applications to master syntax and logic
-2. **.NET Ecosystem** → Understanding frameworks and best practices  
-3. **Web API Development** → Building toward ASP.NET Core backend systems
-4. **Full-Stack Applications** → End-to-end .NET solutions
 
 ## Projects
 
@@ -38,12 +32,16 @@ The details for it will be below, feel free to mess around with it, find bugs, a
 - The pet reacts to you based on what you do with it and how it is feeling at a given time considering its hunger, energy, and happiness.
 - Tried to implement OOP principles and built the program with future scalability in mind. For example, StringBuilder to save on memory usage and arrays to make adding new functions easy without messing with other parts of the program.
 
+### [4. PetDaycareAPI]
+ - Currently in progress. Will continue to update this section.
+ - Using the codebase of my most recent project as a jumping off point for focusing entirely on the differences betweeen running a console app and building with ASP.NET
+
 ## Goals
 - Transition to working as a junior .NET developer
 - Master ASP.NET Core Web API development patterns
 - Build production-ready applications with professional architecture
 - Contribute to open-source .NET projects
-- Work on some fun personal projects, like a game or a calorie calculator. Maybe even a phone app?
+- Work on some fun personal projects, like a game or a calorie calculator. Maybe even a mobile app?
 
 ## Learning Resources
 - Microsoft Learn C# Paths
